@@ -19,7 +19,15 @@ const HorseDetails: FC = () => {
             <Card
                 title={horse.name}
                 extra={<Tag color="blue">{horse.gender?.name_ar || 'Not specified'}</Tag>}
-                cover={<Image height={300} src={horse.image} alt="Horse Image" />}
+                cover={<Image
+                    height={300}
+                    src={horse.image || "https://i.ibb.co/WNg9PXkG/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpg"}
+                    alt="Horse Image"
+                    onError={(e) => {
+                        (e.target as HTMLImageElement).onerror = null;
+                        (e.target as HTMLImageElement).src = "https://i.ibb.co/WNg9PXkG/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpg";
+                    }}
+                />}
             >
                 <Descriptions column={1} bordered>
                     <Descriptions.Item label="Horse Number">{horse.horse_number}</Descriptions.Item>
