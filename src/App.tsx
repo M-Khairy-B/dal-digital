@@ -49,14 +49,15 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-
+      {
+        path: "*",
+        element: <PrivateRoute>
+          <NotFound />
+        </PrivateRoute>
+        ,
+      },
     ],
-  }, {
-    path: "*",
-    element:
-      <NotFound />
-    ,
-  },
+  }
 ]);
 
 function App() {
