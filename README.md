@@ -1,3 +1,4 @@
+
 # React + TypeScript + Vite
 
 # 🐎 Horse Management App
@@ -35,30 +36,33 @@ A simple web application to manage and display horse data, with authentication a
 
 ---
 
-📁 Project Structure
-The project is structured to ensure scalability and maintainability:
-src/
-├── assets/         # Static files like images, icons, and other resources
-├── components/     # Reusable UI components (e.g., Card, Pagination, SearchBar)
-├── store/          # Global state management (e.g., auth store, horse store)
-├── utilities/      # Helper functions and API utilities
-├── App.css         # Global styles for the app
-├── App.tsx         # Main application component
-├── index.css       # Base CSS for the project
-├── main.tsx        # Entry point for React app
-.env                # Environment variables
-.gitignore          # Git ignore configuration
-eslint.config.js    # ESLint configuration file
-index.html          # Main HTML file for the app
-package-lock.json   # Lock file for npm dependencies
-package.json        # Project metadata and npm scripts
-README.md           # Project documentation
-tsconfig.json       # TypeScript configuration
-vite.config.ts      # Vite build tool configuration
+📁 Project Structure  
+The project is structured to ensure scalability and maintainability:  
+src/  
+├── assets/         # Static files like images, icons, and other resources  
+├── components/     # Reusable UI components (e.g., Card, Pagination, SearchBar)  
+├── store/          # Global state management (e.g., auth store, horse store)  
+├── utilities/      # Helper functions and API utilities  
+├── App.css         # Global styles for the app  
+├── App.tsx         # Main application component  
+├── index.css       # Base CSS for the project  
+├── main.tsx        # Entry point for React app  
+.env                # Environment variables  
+.gitignore          # Git ignore configuration  
+eslint.config.js    # ESLint configuration file  
+index.html          # Main HTML file for the app  
+package-lock.json   # Lock file for npm dependencies  
+package.json        # Project metadata and npm scripts  
+README.md           # Project documentation  
+tsconfig.json       # TypeScript configuration  
+vite.config.ts      # Vite build tool configuration  
 
+---
 
-🔑 Environment Variables
-VITE_API_URL=http://localhost:3000/api        # Replace with your backend API URL
+🔑 Environment Variables  
+VITE_API_URL=http://localhost:3000/api        # Replace with your backend API URL  
+
+---
 
 ## 🛠️ Project Setup
 
@@ -68,7 +72,15 @@ To get started, install the required dependencies:
 
 ```bash
 npm install
-🧪 Run the app locally
-npm run dev
+```
 
+### 🧪 Run the app locally
+
+After installation, you can start the development server with:
+
+```bash
+npm run dev
+```
+
+Your application will be available at `http://localhost:3000`.
 
