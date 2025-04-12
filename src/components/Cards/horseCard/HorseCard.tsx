@@ -16,7 +16,7 @@ const HorseCard: React.FC<HorseCardProps> = ({ horse }) => {
                     alt={horse.name}
                     onError={(e) => {
                         e.currentTarget.onerror = null;
-                        e.currentTarget.src = "https://i.ibb.co/Y7gW5qg7/horse-nature-generate-image.jpg";
+                        e.currentTarget.src = "https://i.ibb.co/WNg9PXkG/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpg";
                     }}
                 />
             </Link>
